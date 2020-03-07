@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Energy counter for Aulion">
+    <meta name="author" content="Ondrej Vales">
+
+    <title>Aulion Energy Counter</title>
+
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <h1 class="container">
+        <div>Aulion Energy Counter</div>
+        <div>
+            Total energy: <span id="energy_total">40</sapn>
+        </div>
+    </h1>
+
+    <div class="container">
+        <div class="box">
+            <span>Attack</span>
+            <span id="energy_att">0</span>
+            <div class="container item" target="energy_att">
+                <div class="button">+</div>
+                <div class="button">-</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
