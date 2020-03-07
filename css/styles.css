@@ -82,3 +82,13 @@ i {
     height: auto;
     font-size: x-large;
 }
+
+.counter {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.title {
+    font-size: large;
+    font-weight: bold;
+}
