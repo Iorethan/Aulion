@@ -1,17 +1,34 @@
-.container {
+.body {
+    height: 360px;
+}
+
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
 }
 
-.item {
-    width: 60px;
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+.container > :only-child
+{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .box{
     width: 100px;
     height: 100px;
+    margin: 10px;
+    padding: 10px;
+    background-color: papayawhip;
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,12 +36,43 @@
     flex-wrap: nowrap;
 }
 
+.item {
+    width: 80px;
+}
+
+.block {
+    background-color: seashell;
+    border-radius: 10px;
+}
+
+.block_name {
+    margin-top: 10px;
+    height: 30px;
+    text-align: center;
+    font-size: xx-large;
+}
+
 .button {
     width: 20px;
     height: 20px;
-    display: inline-block;
     background-color: darkgrey;
+    display: inline-block;
     font-size: large;
     vertical-align: middle;
     text-align: center;
+}
+
+.text {
+    width: 100px;
+    height: auto;
+    font-size: x-large;
+}
+
+.button {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
 }

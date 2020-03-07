@@ -13,22 +13,94 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
 
-    <h1 class="container">
+    <h1 class="header">
         <div>Aulion Energy Counter</div>
         <div>
             Total energy: <span id="energy_total">40</sapn>
         </div>
     </h1>
 
-    <div class="container">
-        <div class="box">
-            <span>Attack</span>
-            <span id="energy_att">0</span>
-            <div class="container item" target="energy_att">
-                <div class="button">+</div>
-                <div class="button">-</div>
+    <div class="body">
+        <div class="block">
+            <div class="block_name">Energy Reservior</div>
+            <div class="container">
+                <div class="box">
+                    <span>Attack</span>
+                    <span class="counter" id="energy_att">0</span>
+                    <div class="container item" target="energy_att">
+                        <div class="button control init" type="inc">+</div>
+                        <div class="button control init" type="dec">-</div>
+                        <div class="button control play" type="use">&or;</div>
+                    </div>
+                </div>
+                <div class="box">
+                    <span>Defence</span>
+                    <span class="counter" id="energy_def">0</span>
+                    <div class="container item" target="energy_def">
+                        <div class="button control init" type="inc">+</div>
+                        <div class="button control init" type="dec">-</div>
+                        <div class="button control play" type="use">&or;</div>
+                    </div>
+                </div>
+                <div class="box">
+                    <span>Dodge</span>
+                    <span class="counter" id="energy_dod">0</span>
+                    <div class="container item" target="energy_dod">
+                        <div class="button control init" type="inc">+</div>
+                        <div class="button control init" type="dec">-</div>
+                        <div class="button control play" type="use">&or;</div>
+                    </div>
+                </div>
+                <div class="box">
+                    <span>Stance</span>
+                    <span class="counter" id="energy_sta">0</span>
+                    <div class="container item" target="energy_sta">
+                        <div class="button control init" type="inc">+</div>
+                        <div class="button control init" type="dec">-</div>
+                        <div class="button control play" type="use">&or;</div>
+                    </div>
+                </div>
             </div>
         </div>
+        
+        <div class="block play">
+            <div class="block_name">Expanded Energy</div>
+            <div class="container">
+                <div class="box">
+                    <span>Attack</span>
+                    <span class="counter" id="energy_att_res">0</span>
+                    <div class="container item" target="energy_att_res">
+                        <div class="button control" type="del">&perp;</div>
+                    </div>
+                </div>
+                <div class="box">
+                    <span>Attack</span>
+                    <span class="counter" id="energy_def_res">0</span>
+                    <div class="container item" target="energy_def_res">
+                        <div class="button control" type="del">&perp;</div>
+                    </div>
+                </div>
+                <div class="box">
+                    <span>Dodge</span>
+                    <span class="counter" id="energy_dod_res">0</span>
+                    <div class="container item" target="energy_dod_res">
+                        <div class="button control" type="del">&perp;</div>
+                    </div>
+                </div>
+                <div class="box">
+                    <span>Stance</span>
+                    <span class="counter" id="energy_sta_res">0</span>
+                    <div class="container item" target="energy_sta_res">
+                        <div class="button control" type="del">&perp;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="set" class="button text init">Play</div>
+        <div id="reset" class="button text play">Reset</div>
     </div>
 </body>
 </html>
